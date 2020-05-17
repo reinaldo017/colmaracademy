@@ -433,6 +433,7 @@ nav a{
   justify-content: flex-start;
   align-items: center;
   background-color: lightgray;
+  overflow: hidden;
 }
 .banner img{
   display: inline-block;
@@ -446,6 +447,7 @@ nav a{
   align-items: flex-start;
   height: 350px;
   max-width: 30%;
+  overflow: hidden;
 }
 .texto_banner h2{
   font-weight: bold;
@@ -464,4 +466,64 @@ nav a{
   color: white;
   text-align: center;
   margin: 0.5rem auto;
+}
+/*Información*/
+.info{
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Main Info*/
+.main_info{
+  max-width: 60%;
+  margin: 2rem 1.5rem;
+}
+.main_info img{
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.main_info h2{
+  font-weight: bold;
+}
+.main_info p{
+  margin: 1.5rem 0;
+}
+#autor{
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+/*Info Items*/
+.items_info{
+  margin-top: 2rem;
+  max-width: 40%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+}
+.item img{
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+.item section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.item p{
+  margin: 0.5rem 0;
+}
+.lecture{
+  background-color: lightgray;
 }
