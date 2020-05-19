@@ -365,7 +365,7 @@ textarea {
     padding: 0.2em 0;
 }
 /*Estilos tipográficos*/
-body{
+html{
   font-family: Verdana, sans-serif;
   font-size: 16px;
 }
@@ -568,6 +568,7 @@ nav a{
 .course_text p{
   margin-top: 0.5rem;
 }
+/*Márgenes*/
 .software,.design{
   margin-bottom: 2rem;
 }
@@ -576,4 +577,64 @@ nav a{
 }
 .business{
   margin: 0 2rem;
+}
+/*Thesis*/
+.thesis h2{
+  font-weight: bold;
+  margin: 2rem auto;
+  text-align: center;
+}
+.thesis_container{
+  display: inline-flex;
+}
+/*Main thesis*/
+.main_thesis{
+  flex-basis: 60%;
+  margin: 0 1.5rem 2rem 1.5rem;
+}
+.main_thesis video{
+  max-width: 100%;
+}
+.main_thesis h6{
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+/*Thesis items*/
+.items_thesis{
+  display: flex;
+  max-width: 40%;
+  flex-direction: column;
+  align-items: center;
+}
+.item_thesis{
+  display: inline-flex;
+  align-items: center;
+}
+.item_thesis img{
+  margin: 1rem;
+  max-width: 35%;
+  height: auto;
+}
+.item_thesis_texto{
+  flex-basis: 65%;
+}
+.fisma{
+  background-color: lightgray;
+}
+/*Footer*/
+footer p{
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  float: left;
+}
+footer a{
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  float: right;
+  margin: 0 0.50rem;
 }
