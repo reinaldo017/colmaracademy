@@ -366,14 +366,16 @@ textarea {
 }
 /*Estilos tipográficos*/
 html{
-  font-family: Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+  color: #494949;
 }
 h1{
   font-size: 2.5rem;
 }
 h2{
   font-size: 2.19rem;
+  font-weight: bold;
 }
 h3{
   font-size: 1.88rem;
@@ -386,16 +388,21 @@ h5{
 }
 h6{
   font-size: 1.13rem;
+  font-weight: bold;
 }
 a{
   text-decoration: none;
 }
+p{
+  line-height: 1.5;
+}
+
 /*Barra de Navegación*/
 nav{
   display: flex;
   justify-content: space-between;
   background-color: white;
-  width: 100%;
+  max-width: 100%;
   height: 4rem;
   margin-left: 1.5rem;
   margin-right: 1rem;
@@ -410,10 +417,11 @@ nav{
 .logo p{
   font-size: 2rem;
   color: black;
-  font-weight: bold;
+  font-weight: 600;
 }
 .logo span{
   color: lightgray;
+  font-weight: lighter;
 }
 .enlaces{
   display: flex;
@@ -433,7 +441,7 @@ nav a{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: lightgray;
+  background-color: #bdbdbd;
   overflow: hidden;
   max-width: 100%;
 }
@@ -462,12 +470,13 @@ nav a{
 .boton_banner{
   width: 85%;
   margin: 20px 0;
-  background-color: gray;
+  background-color: #494949;
 }
 .boton_banner h6{
   color: white;
   text-align: center;
   margin: 0.5rem auto;
+  font-weight: 400;
 }
 /*Información*/
 .info{
@@ -526,13 +535,16 @@ nav a{
 .item p{
   margin: 0.5rem 0;
 }
+.item a{
+  color: #039be5;
+}
 .lecture{
   background-color: lightgray;
 }
 /*Courses*/
 .courses{
   overflow: hidden;
-  background-color: lightgray;
+  background-color: #eeeeee;
   max-width: 100%;
 }
 .courses h2{
@@ -546,6 +558,7 @@ nav a{
   display: flex;
   justify-content: space-between;
   align-items: space-between;
+  align-content: stretch;
   flex-wrap: wrap;
 }
 .course_item{
@@ -619,6 +632,9 @@ nav a{
 .item_thesis_texto{
   flex-basis: 65%;
 }
+.item_thesis_texto p{
+  margin: 0.5rem 0;
+}
 .fisma{
   background-color: lightgray;
 }
@@ -636,5 +652,5 @@ footer a{
   color: black;
   display: inline-block;
   float: right;
-  margin: 0 0.50rem;
+  margin: 1rem 0.50rem;
 }
