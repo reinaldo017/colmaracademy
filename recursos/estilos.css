@@ -396,13 +396,17 @@ a{
 p{
   line-height: 1.5;
 }
-
+/*Estilos tipográficos versión móvil*/
+@media (max-width: 500px){
+  html{
+    font-size: 15px;
+  }
+}
 /*Barra de Navegación*/
 nav{
   display: flex;
   justify-content: space-between;
   background-color: white;
-  max-width: 100%;
   height: 4rem;
   margin-left: 1.5rem;
   margin-right: 1rem;
@@ -435,6 +439,22 @@ nav{
 nav a{
   text-decoration: none;
   color: black;
+}
+.nav_movil{
+  display: none;
+}
+/*Barra de navegación móvil*/
+@media (max-width: 500px) {
+  .escritorio{
+    display: none;
+  }
+  .nav_movil{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    height: 64px;
+  }
 }
 /*Banner*/
 .banner{
@@ -477,6 +497,41 @@ nav a{
   text-align: center;
   margin: 0.5rem auto;
   font-weight: 400;
+}
+/*Banner móvil*/
+@media (max-width: 500px){
+  .banner{
+    display: block;
+  }
+  .banner img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .texto_banner{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: 16px;
+    font-weight: 600;
+    color: #494949;
+  }
+  .texto_banner h2{
+    margin: 32px auto 32px 0;
+    font-weight: 700;
+  }
+  .boton_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    height: 40px;
+    background-color: gray;
+  }
+  .boton_banner h6{
+    font-weight: 600;
+  }
 }
 /*Información*/
 .info{
@@ -541,6 +596,17 @@ nav a{
 .lecture{
   background-color: lightgray;
 }
+/*Información versión móvil*/
+  @media (max-width: 500px){
+    .main_info{
+      display: none;
+    }
+    .items_info{
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
 /*Courses*/
 .courses{
   overflow: hidden;
@@ -554,16 +620,15 @@ nav a{
 }
 .courses_box{
   overflow: hidden;
-  margin: 2rem 4.5rem;
+  margin: 1rem 3.5rem;
   display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  align-content: stretch;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .course_item{
   background-color: white;
   flex-basis: 30%;
+  margin: 1rem;
 }
 .course_item img{
   display: block;
@@ -580,16 +645,6 @@ nav a{
 }
 .course_text p{
   margin-top: 0.5rem;
-}
-/*Márgenes*/
-.software,.design{
-  margin-bottom: 2rem;
-}
-.computer{
-  margin: 0 2rem 2rem 2rem;
-}
-.business{
-  margin: 0 2rem;
 }
 /*Thesis*/
 .thesis h2{
