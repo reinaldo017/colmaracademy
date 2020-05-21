@@ -502,6 +502,7 @@ nav a{
 @media (max-width: 500px){
   .banner{
     display: block;
+    max-width:100%;
   }
   .banner img{
     display: block;
