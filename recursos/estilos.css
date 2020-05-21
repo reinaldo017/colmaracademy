@@ -600,11 +600,43 @@ nav a{
   @media (max-width: 500px){
     .main_info{
       display: none;
+      overflow: hidden;
     }
     .items_info{
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
       max-width: 100%;
+      margin-top: 0;
+    }
+    .item{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 48px;
+      max-width: 100%;
+    }
+    .item img{
+      max-width: 92%;
+      margin: 16px;
+    }
+    .item section{
+      margin-left: 32px;
+    }
+    .lecture{
+      margin-bottom: 32px;
+      background-color: white;
+    }
+
+    /*Cambio de imágenes*/
+    .orientation img{
+      content:url("images/information-orientation-mobile.jpg");
+    }
+    .campus img{
+      content: url("images/information-campus-mobile.jpg");
+    }
+    .lecture img{
+      content: url("images/information-guest-lecture-mobile.jpg");
     }
   }
 /*Courses*/
