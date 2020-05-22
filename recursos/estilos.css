@@ -649,7 +649,7 @@ nav a{
 .courses h2{
   text-align: center;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 32px;
 }
 .courses_box{
   overflow: hidden;
@@ -678,6 +678,33 @@ nav a{
 }
 .course_text p{
   margin-top: 0.5rem;
+}
+/*Courses versión móvil*/
+@media (max-width: 500px){
+  .courses{
+    background-color: white;
+    margin-bottom: 24px;
+  }
+  .courses h2{
+    margin-bottom: 8px;
+  }
+  .courses_box{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .course_item{
+    margin: 8px;
+    background-color: lightgray;
+  }
+  .course_item h6{
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 24px;
+  }
+  .course_item img, .course_text p{
+    display: none;
+  }
 }
 /*Thesis*/
 .thesis h2{
@@ -726,6 +753,29 @@ nav a{
 .fisma{
   background-color: lightgray;
 }
+/*Thesis verisón móvil*/
+@media (max-width: 500px){
+  .texto_thesis, .item_thesis{
+    display: none;
+  }
+  .main_thesis{
+    margin: 0;
+  }
+  .thesis_container{
+    display: block;
+    width: 100%;
+  }
+  .thesis h2{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .thesis video{
+    margin-bottom: 24px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 /*Footer*/
 footer p{
   font-size: 0.75rem;
@@ -741,4 +791,15 @@ footer a{
   display: inline-block;
   float: right;
   margin: 1rem 0.50rem;
+}
+/*Footer versión móvil*/
+@media (max-width: 500px){
+  footer a{
+    display: none;
+  }
+  footer p{
+    display: block;
+    margin: 16px auto;
+    text-align: center;
+  }
 }
